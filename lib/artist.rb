@@ -31,11 +31,7 @@ class Artist
   end
   
   def print_songs(artist)
-    Song.all.each do |song|
-      if song.artist == artist
-        puts song
-      end
-    end
+    
   end
   
 end
