@@ -26,12 +26,6 @@ class Artist
     end
   end
   
-  def print_songs(artist)
-    self.songs do |song|
-      puts song
-    end
-  end
-  
   def songs
     Song.all.select {|song| song.artist == self}
   end
